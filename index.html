@@ -6,15 +6,15 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <!-- <script>
+    <!--<script>
       tailwind.config = {
         theme: {
           screens: {
-            sm: "400px",
+            sms: "400px",
           },
         },
       };
-    </script> -->
+    </script>-->
   </head>
   <body>
     <section id="section-navbar" class="transition-shadow sticky top-0">
@@ -23,11 +23,6 @@
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
           <a href="" class="flex items-center animate-bounce">
-            <!-- <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              class="h-8 mr-3"
-              alt="Flowbite Logo"
-            /> -->
             <p
               class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
             >
@@ -98,10 +93,10 @@
               <p class="text-5xl mt-6 ml-6 md:text-2xl">
                 <span>Hi, I'm </span>Sayeedul Islam Talukder
               </p>
-              <p class="text-base mt-4 ml-6">
+              <p class="text-base mt-3 ml-6">
                 Crruently Working as a Full Stack Developer
               </p>
-              <div class="text-xs mt-10 ml-6">
+              <div class="text-xs mt-7 ml-6">
                 <button
                   type="button"
                   class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
@@ -115,7 +110,7 @@
                     My CV</a
                   >
                 </button>
-                <p class="text-lg mt-6 font-bold md:text-base">
+                <p class="text-lg mt-5 font-bold md:text-base">
                   Frontend Development
                   <span> / Backend Development / </span>
                 </p>
@@ -128,19 +123,18 @@
         </div>
       </div>
       <!-- Jumbotron -->
-      <div class="m-20">
-        <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-      </div>
+      <hr class="h-px my-28 bg-gray-200 border-0 dark:bg-gray-700" />
     </section>
-
     <section id="section-services">
       <div class="mx-6 mt-10 text-white text-center">
         <p class="text-5xl mx-20 text-white font-black tracking-wider">
           SERV<span>I</span>CES
         </p>
-        <div class="flex flex-row md:flex-wrap mx-20 text-start">
+        <div
+          class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-2 items-center justify-center mx-20 mt-10 text-start"
+        >
           <div
-            class="max-w-sm mt-10 mx-2 basis-1/4 md:basis-1/2 sm:basis-1/2 p-6 bg-white hover:scale-125 hover:border-white hover:duration-500 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            class="flex-auto max-w-sm mt-10 mx-2 p-6 bg-white hover:scale-125 hover:border-white hover:duration-500 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <i class="large material-icons w-7 h-7 mb-3">brush</i>
             <a href="#">
@@ -157,7 +151,7 @@
             </p>
           </div>
           <div
-            class="max-w-sm mt-10 mx-2 basis-1/4 md:basis-1/2 sm:basis-1/2 p-6 bg-white hover:scale-125 hover:border-white hover:duration-500 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            class="flex-auto max-w-sm mt-10 mx-2 p-6 bg-white hover:scale-125 hover:border-white hover:duration-500 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <i class="large material-icons w-7 h-7 mb-3">computer</i>
             <a href="#">
@@ -175,25 +169,7 @@
             </p>
           </div>
           <div
-            class="max-w-sm mt-10 mx-2 basis-1/4 md:basis-1/2 sm:basis-1/2 p-6 bg-white hover:scale-125 hover:border-white hover:duration-500 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-          >
-            <i class="large material-icons w-7 h-7 mb-3">tune</i>
-            <a href="#">
-              <h5
-                class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
-              >
-                API Modification
-              </h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-              With Back-End service, the application works with full dynamic
-              funtionality. When implementing Front-End feauture, related API is
-              developed or midified by me to complete the full dynamic work
-              flow.
-            </p>
-          </div>
-          <div
-            class="max-w-sm mt-10 mx-2 basis-1/4 md:basis-1/2 sm:basis-1/2 p-6 bg-white hover:scale-125 hover:border-white hover:duration-500 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            class="flex-auto max-w-sm mt-10 mx-2 p-6 bg-white hover:scale-125 hover:border-white hover:duration-500 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <i class="large material-icons w-7 h-7 mb-3"
               >settings_applications</i
@@ -212,19 +188,38 @@
               our projects, I worked both in SQL Database & No SQL Database.
             </p>
           </div>
+          <div
+            class="flex-auto max-w-sm mt-10 mx-2 p-6 bg-white hover:scale-125 hover:border-white hover:duration-500 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <i class="large material-icons w-7 h-7 mb-3">tune</i>
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+              >
+                API Modification
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
+              With Back-End service, the application works with full dynamic
+              funtionality. When implementing Front-End feauture, related API is
+              developed or midified by me to complete the full dynamic work
+              flow.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="m-20">
-        <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-      </div>
+      <hr class="h-px my-28 bg-gray-200 border-0 dark:bg-gray-700" />
     </section>
+
     <section id="section-projects">
       <div class="mx-20 text-white text-center">
         <p class="text-5xl mx-20 font-black tracking-wider">
           RECENT <span>PROJECTS</span>
         </p>
-        <div class="mt-10 flex flex-row md:flex-wrap md:w-full mx-20">
-          <div class="flip-box mx-2 basis-1/2">
+        <!--<div
+          class="mt-10 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-2 md:w-full mx-20"
+        >
+          <div class="flip-box mx-2">
             <div class="flip-box-inner">
               <div class="flip-box-front border-gray-700">
                 <img
@@ -269,7 +264,7 @@
               </div>
             </div>
           </div>
-          <div class="flip-box mx-2 basis-1/2">
+          <div class="flip-box mx-2">
             <div class="flip-box-inner">
               <div class="flip-box-front border-gray-700">
                 <img
@@ -318,70 +313,122 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="mt-5 flex flex-row mx-20">
-          <div class="flip-box mx-2 basis-1/2">
-            <div class="flip-box-inner">
-              <div class="flip-box-front border-gray-700">
-                <img
-                  src="images/dcourier.png"
-                  alt="dcourier"
-                  style="width: 800px; height: 400px"
-                />
-              </div>
-              <div class="flip-box-back">
-                <h2 class="text-2xl mt-20 font-black">
-                  <span>D-Courier</span>
-                </h2>
-                <p class="mt-6 mx-10">
-                  Designed & Developed a system where people can send/receive
-                  products via merchant or agent of the system and rider
-                  delivers or pickups products from the people thus enhance the
-                  courier experience more comfortably
-                </p>
-                <p class="mt-10">
-                  Technology used:
-                  <span>Angular, Nodejs(Hapijs), Postgresql</span>
-                </p>
-                <a
-                  href="https://dcourier.celloscope.net/"
-                  class="inline-flex items-center text-white hover:underline mt-10"
-                  target="_blank"
-                >
-                  Visit Our Project
-                  <svg
-                    class="w-3 h-3 ml-2.5"
-                    aria-hidden="true"
-                    xmlns="https://dcourier.celloscope.net/"
-                    fill="none"
-                    viewBox="0 0 18 18"
+        </div>-->
+        <!--<div class="mt-10 flex flex-row md:flex-wrap md:w-full mx-20">
+          <div class="mt-5 flex flex-row mx-20">
+            <div class="flip-box mx-2 basis-1/2">
+              <div class="flip-box-inner">
+                <div class="flip-box-front border-gray-700">
+                  <img
+                    src="images/dcourier.png"
+                    alt="dcourier"
+                    style="width: 800px; height: 400px"
+                  />
+                </div>
+                <div class="flip-box-back">
+                  <h2 class="text-2xl mt-20 font-black">
+                    <span>D-Courier</span>
+                  </h2>
+                  <p class="mt-6 mx-10">
+                    Designed & Developed a system where people can send/receive
+                    products via merchant or agent of the system and rider
+                    delivers or pickups products from the people thus enhance
+                    the courier experience more comfortably
+                  </p>
+                  <p class="mt-10">
+                    Technology used:
+                    <span>Angular, Nodejs(Hapijs), Postgresql</span>
+                  </p>
+                  <a
+                    href="https://dcourier.celloscope.net/"
+                    class="inline-flex items-center text-white hover:underline mt-10"
                     target="_blank"
                   >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
-                    />
-                  </svg>
-                </a>
+                    Visit Our Project
+                    <svg
+                      class="w-3 h-3 ml-2.5"
+                      aria-hidden="true"
+                      xmlns="https://dcourier.celloscope.net/"
+                      fill="none"
+                      viewBox="0 0 18 18"
+                      target="_blank"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>flex flex-row
+        </div>-->
+        <div
+          class="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 gap-2 justify-center mx-20"
+        >
+          <div class="flex min-h-auto w-full flex-col justify-center mt-10">
+            <div class="group h-96 w-full [perspective:1000px]">
+              <div
+                class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
+              >
+                <div class="absolute inset-0">
+                  <img
+                    class="h-full w-full rounded-xl object-fit shadow-xl shadow-black/40"
+                    src="images/mra.png"
+                    alt="mra-img"
+                  />
+                </div>
+                <div
+                  class="absolute inset-0 h-full w-full rounded-xl bg-gray-800 border-gray-400 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]"
+                >
+                  <div
+                    class="flex min-h-full flex-col items-center justify-center"
+                  >
+                    <h1 class="text-3xl font-bold"><span>MRA-IMS</span></h1>
+                    <p class="text-lg">
+                      Designed & Developed a system for the government's MRA
+                      institute so that they can provide loan related services
+                      to the influencers as a result they can manage easily the
+                      system and everything is kept tracked.
+                    </p>
+                    <p class="text-base">
+                      Technology used: <span>Angular, Java, Postgresql </span>
+                    </p>
+
+                    <a
+                      href="https://ims.mra.gov.bd/"
+                      class="inline-flex items-center text-white hover:underline mt-5"
+                      target="_blank"
+                    >
+                      Visit Our Project
+                      <svg
+                        class="w-3 h-3 ml-2.5"
+                        aria-hidden="true"
+                        xmlns="https://mra-ims.celloscope.net/"
+                        fill="none"
+                        viewBox="0 0 18 18"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="flex flex-col items-center justify-center mt-10">
-          <!-- <button
-            type="button"
-            class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 mt-8 hover:ease-in duration-300"
-          >
-            Blue
-          </button> -->
-        </div>
       </div>
-      <div class="m-20">
-        <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-      </div>
+      <hr class="h-px my-28 bg-gray-200 border-0 dark:bg-gray-700" />
     </section>
     <section id="section-about">
       <p
@@ -389,8 +436,8 @@
       >
         ABOUT <span>ME</span>
       </p>
-      <div class="mt-10 flex flex-row mx-20 text-white">
-        <div
+      <div class="mt-10 flex flex-row text-white">
+        <!-- <div
           class="ms-20 text-lg basis-1/2 text-end mx-5 flex flex-col items-end justify-center"
         >
           <p class="md:text-base">
@@ -419,18 +466,89 @@
               >LinkedIn Profile</a
             >
           </button>
-        </div>
+        </div> 
         <div class="text-sm basis-1/2 text-start mx-5">
           <img
             src="./images/PP.jpg"
             class="h-96 w-96 transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
             alt="img"
           />
+        </div>-->
+        <!--<img
+          src="./images/PP.jpg"
+          class="h-96 w-96 transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0 float-right"
+          alt="img"
+        />
+        <div>
+          <p class="md:text-base">
+            My name is Sayeedul Islam Talukder. I have been working on Full
+            Stack Development since July, 2022. I have worked in 3 mega projects
+            and several mini projects so far. I took the role to develop the
+            applications.
+          </p>
+          <p class="mt-8 md:text-base md:mt-4">
+            My target has been to create software in both frontend & backend as
+            a full stack developer. Also I have been assuring the Responsive
+            issues of the applications. All my projects are Responsive to
+            smaller devices with flexible user experience. Beside these, I also
+            worked in database management part. I implement any dynamic feauture
+            to the bith Client & Server Side with maximum flexibility.
+          </p>
+          <button
+            type="button"
+            class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 mt-8"
+          >
+            <a
+              href="https://www.linkedin.com/in/islamsayeed13/"
+              class="cta"
+              target="_blank"
+              download
+              >LinkedIn Profile</a
+            >
+          </button>
+        </div>-->
+        <div
+          class="max-w-md mx-auto text-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+        >
+          <div class="md:flex">
+            <div class="p-8" dir="rtl">
+              <div class="">
+                <p class="md:text-base">
+                  My name is Sayeedul Islam Talukder. I have been working on
+                  Full Stack Development since July, 2022. I have worked in 3
+                  mega projects and several mini projects so far. I took the
+                  role to develop the applications
+                </p>
+                <p class="mt-8 md:text-base md:mt-4">
+                  My target has been to create software in both frontend &
+                  backend as a full stack developer. Also I have been assuring
+                  the Responsive issues of the applications. All my projects are
+                  Responsive to smaller devices with flexible user experience.
+                  Beside these, I also worked in database management part. I
+                  implement any dynamic feauture to the bith Client & Server
+                  Side with maximum flexibility
+                </p>
+              </div>
+
+              <a
+                href="https://www.linkedin.com/in/islamsayeed13/"
+                class="block mt-1 text-lg leading-tight font-medium hover:underline cta"
+                target="_blank"
+                download
+                >LinkedIn Profile</a
+              >
+            </div>
+            <div class="md:shrink-0">
+              <img
+                class="h-48 w-full object-cover md:h-full md:w-48"
+                src="./images/PP.jpg"
+                alt="Modern building architecture"
+              />
+            </div>
+          </div>
         </div>
       </div>
-      <div class="m-20">
-        <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-      </div>
+      <hr class="h-px my-28 bg-gray-200 border-0 dark:bg-gray-700" />
     </section>
     <section id="section-footer">
       <div class="mx-20 text-white text-center">
@@ -464,18 +582,6 @@
             <h6>Mirpur-1, Dhaka-1216, Bangladesh</h6>
           </div>
         </div>
-        <!-- <button
-          type="button"
-          class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 mt-10"
-        >
-          Dark
-        </button>
-        <button
-          type="button"
-          class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 mt-10"
-        >
-          Dark
-        </button> -->
         <p class="text-xs my-8 text-slate-500">
           Copyright © 2023 Sayeedul Islam Talukder. All rights reserved
         </p>

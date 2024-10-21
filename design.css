@@ -2,6 +2,21 @@ span {
   color: #2167b5;
 }
 
+.icon {
+  width: 70px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.icon:hover {
+  scale: 1.25;
+  transition: 0.3s;
+}
+
+body {
+  padding: 0 5%;
+}
+
 .flip-box {
   background-color: transparent;
   width: 800px;
@@ -46,15 +61,4 @@ span {
   background-color: rgba(17, 24, 39);
   color: white;
   transform: rotateY(180deg);
-}
-
-.icon {
-  width: 70px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-}
-
-.icon:hover {
-  scale: 1.25;
-  transition: 0.3s;
 }
