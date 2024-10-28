@@ -1,7 +1,9 @@
 {
   "workbench.colorCustomizations": {
-    "terminal.background": "#131212",
-    "terminal.foreground": "#dddad6",
+    "terminal.foreground": "#cdff69",
+    "terminal.background": "#201e1e",
+    // "terminal.background": "#131212",
+    // "terminal.foreground": "#84f6b5",
     "terminal.ansiBlack": "#1D2021",
     "terminal.ansiBrightBlack": "#665C54",
     "terminal.ansiBrightBlue": "#0D6678",
