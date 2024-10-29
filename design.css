@@ -2,6 +2,29 @@ span {
   color: #2167b5;
 }
 
+.typing-style {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  animation: typing 5s steps(40) infinite,
+    blink-caret 0.75s step-end infinite alternate;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .flip-box {
   background-color: transparent;
   width: 800px;
