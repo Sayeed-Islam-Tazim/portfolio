@@ -7,20 +7,37 @@ span {
   white-space: nowrap;
   overflow: hidden;
 
-  animation: typing 5s steps(40) infinite,
-    blink-caret 0.75s step-end infinite alternate;
+  animation: 
+  /* typing 5s steps(40) infinite,
+    blink-caret 0.75s step-end infinite alternate; */ typing
+      2s steps(13) infinite alternate,
+    blink-caret 1000ms steps(13) infinite normal;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from {
+  /* from {
     width: 0;
+  } */
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 110%;
   }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  50% {
+  /* 100% {
+    border-color: transparent;
+  } */
+  from {
+    border-color: black;
+  }
+
+  to {
     border-color: transparent;
   }
 }
