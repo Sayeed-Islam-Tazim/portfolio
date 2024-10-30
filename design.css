@@ -2,18 +2,41 @@ span {
   color: #2167b5;
 }
 
+.animation-style {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: animated-text 4s linear infinite alternate;
+  /* animated-text 4s linear 1s 1 normal both,
+    animated-cursor 600ms linear infinite; */
+}
+
+/* text animation */
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
 .typing-style {
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
-
-  animation: 
-  /* typing 5s steps(40) infinite,
-    blink-caret 0.75s step-end infinite alternate; */ 
-    /* typing
-    2s steps(13) infinite alternate; */ typing
-    5s steps(20, end) infinite alternate;
-  /* blink-caret 1000ms steps(13) infinite normal; */
+  animation: typing 3s steps(15, end) infinite alternate;
 }
 
 /* The typing effect */
@@ -26,21 +49,7 @@ span {
   }
 
   to {
-    width: 110%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  /* 100% {
-    border-color: transparent;
-  } */
-  from {
-    border-color: black;
-  }
-
-  to {
-    border-color: transparent;
+    max-width: 100%;
   }
 }
 
