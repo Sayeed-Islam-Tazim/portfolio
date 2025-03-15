@@ -110,6 +110,15 @@ span {
   }
 }
 
+.changestyle {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 3s ease-in-out; /* Apply smooth opacity transition */
+  opacity: 1; /* Start visible */
+}
+
 .flip-box {
   background-color: transparent;
   width: 800px;

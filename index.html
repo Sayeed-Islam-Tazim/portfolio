@@ -71,8 +71,6 @@
         </div>
       </nav>
     </section>
-    <!-- style="background-image: url('images/cover.jpg'); height: 400px" 
-                  href="images/sayeedul_islam_talukder_cv.pdf" -->
     <section id="section-header">
       <div
         id="carousel"
@@ -127,12 +125,15 @@
         const carousel = document.getElementById("carousel");
 
         function changeBackgroundImage() {
-          carousel.style.opacity = 0;
           // carousel.setAttribute('style',`background-image:url(${images[currentIndex]});height : 400px`)
           carousel.style.backgroundImage = `url(${images[currentIndex]})`;
           carousel.style.height = "400px";
-          carousel.style.opacity = 1;
+          carousel.style.transitionDuration = "3s, 4s";
+          // carousel.className = "changeStyle";
+          // carousel.style.transitionDelay = "2s";
+          // carousel.style.animation = "toast-entry .5s ease-in";
           // carousel.style.transition = "opacity 1s ease-in-out";
+          // carousel.style.opacity = 1;
           currentIndex = (currentIndex + 1) % images.length;
         }
 
