@@ -96,7 +96,7 @@
               </p>
               <button
                 type="button"
-                class="text-white bg-gray-800 hover:bg-gray-900 mt-3 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-2 py-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+                class="text-white bg-gray-800 hover:bg-gray-900 mt-3 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg border-current text-sm px-2 py-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 border dark:border-gray-700"
               >
                 <a
                   href="https://docs.google.com/document/d/1otjSbE3dRnah94GKJIoLGiVfmyI5i8nYMKu8AP-adJY/export?format=pdf"
@@ -104,15 +104,13 @@
                   target="_blank"
                   download
                 >
-                  My CV</a
+                  My Resume</a
                 >
               </button>
               <p class="text-lg mt-5 md:mt-3 text-xs font-bold md:text-base">
                 Frontend Development
                 <span class="text-blue-500"> / Backend Development / </span>
-              </p>
-              <p class="text-lg font-bold text-xs md:text-base">
-                Full Stack Development
+                <br />Full Stack Development
               </p>
             </div>
           </div>
@@ -128,16 +126,17 @@
           // carousel.setAttribute('style',`background-image:url(${images[currentIndex]});height : 400px`)
           carousel.style.backgroundImage = `url(${images[currentIndex]})`;
           carousel.style.height = "400px";
-          carousel.style.transitionDuration = "3s, 4s";
+          carousel.style.transitionDuration = "5s";
+          // carousel.style.transform = `translateX(0)`;
           // carousel.className = "changeStyle";
           // carousel.style.transitionDelay = "2s";
-          // carousel.style.animation = "toast-entry .5s ease-in";
-          // carousel.style.transition = "opacity 1s ease-in-out";
+          // carousel.style.animation = "fade 1.5s ease-in-out";
+          // carousel.style.transition = "fade 1s ease-in-out";
           // carousel.style.opacity = 1;
           currentIndex = (currentIndex + 1) % images.length;
         }
 
-        setInterval(changeBackgroundImage, 5000);
+        setInterval(changeBackgroundImage, 10000);
 
         changeBackgroundImage();
       </script>
@@ -410,11 +409,13 @@
                   >
                     <h1 class="text-3xl font-bold"><span>IMS</span></h1>
                     <p class="text-lg sm:text-base">
-                      Designed and developed a system for the government's MRA
-                      Institute to facilitate loan-related services for
-                      influencers. This system enhances management efficiency by
-                      ensuring all activities are systematically tracked and
-                      organized.
+                      Designed and developed a comprehensive system for the MRA
+                      Institute, a government organization, to streamline and
+                      enhance loan-related services for influencers. This system
+                      significantly improves operational efficiency by ensuring
+                      all processes and activities are systematically tracked,
+                      organized, and managed, thereby facilitating smoother and
+                      more effective loan management.
                     </p>
                     <p class="text-base">
                       Technology used: <span>Angular, Nodejs, OracleDB </span>
@@ -721,11 +722,13 @@
             </p>
           </div>
           <div>
-            <i class="large material-icons w-full mb-5 text-5xl">location_on</i>
-            <!-- <i class="large material-icons w-full mb-5 text-5xl">person_pin</i> -->
+            <!-- <i class="large material-icons w-full mb-5 text-5xl">location_on</i> -->
+            <i class="large material-icons w-full mb-5 text-5xl">person_pin</i>
             <p class="text-md hover:scale-125">
-              333/1-B, Ekota Road, Ahmed Nagar, Mirpur-1, Dhaka-1216, Bangladesh
+              333/1-B, Ekota Road, Ahmed Nagar, Mirpur-1, <br />
+              Dhaka-1216, Bangladesh
             </p>
+            <p class="text-md hover:scale-125"></p>
           </div>
         </div>
         <p class="text-xs my-8 text-slate-500">
