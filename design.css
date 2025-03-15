@@ -2,16 +2,31 @@ span {
   color: #2167b5;
 }
 
-.animation-style {
+/* .animation-style {
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
   animation: animated-text 4s linear infinite alternate;
-  /* animated-text 4s linear 1s 1 normal both,
-    animated-cursor 600ms linear infinite; */
-}
+} */
 
 /* text animation */
+/* @keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+} */
+
+.animation-style {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: animated-text 5s linear infinite alternate;
+  /* pause 3s 1 normal forwards 4s; */
+}
+
 @keyframes animated-text {
   from {
     width: 0;
@@ -21,8 +36,53 @@ span {
   }
 }
 
-/* cursor animations */
+/* @keyframes animated-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
 
+/* @keyframes pause {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+} */
+
+/* .animation-style {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 4s steps(40) 1 normal forwards,
+    erase 2s steps(40) 1 normal forwards 4s,
+    typewriter 4s steps(40) 1 normal forwards 6s,
+    erase 2s steps(40) 1 normal forwards 10s;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes erase {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+} */
+
+/* cursor animations */
 @keyframes animated-cursor {
   from {
     border-right-color: rgba(255, 255, 255, 0.75);
@@ -41,9 +101,6 @@ span {
 
 /* The typing effect */
 @keyframes typing {
-  /* from {
-    width: 0;
-  } */
   from {
     width: 0%;
   }
